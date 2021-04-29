@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.zxw</groupId>
+  <groupId>com.zxw</groupId> <!-- 哪个公司生产的软件 -->
   <artifactId>designpattern</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -14,8 +14,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -25,6 +25,14 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.2.10.RELEASE</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -65,10 +73,10 @@
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
         </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>
+<!--        <plugin>-->
+<!--          <artifactId>maven-project-info-reports-plugin</artifactId>-->
+<!--          <version>3.0.0</version>-->
+<!--        </plugin>-->
       </plugins>
     </pluginManagement>
   </build>
