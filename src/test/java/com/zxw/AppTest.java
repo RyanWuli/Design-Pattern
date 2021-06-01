@@ -39,4 +39,13 @@ public class AppTest
         Mgr08.INSTANCE.test();
 
     }
+
+    /**
+     * 电脑设备的核心数量
+     */
+    @Test
+    public void testCpu() {
+        int i = Runtime.getRuntime().availableProcessors();
+        System.out.println(">>>>>>>>>>>>>>>>>>>> 电脑可用线程核心数量：" + i);
+    }
 }

@@ -14,6 +14,9 @@ package com.zxw.singleton;
  * 也称懒汉式
  * 虽然达到了按需初始化的目的，但却带来线程不安全的问题
  * 可以通过synchronized解决，但也带来效率下降
+ * volatile：
+ *      线程间可见
+ *      防止指令重排
  */
 public class Mgr06 {
 
